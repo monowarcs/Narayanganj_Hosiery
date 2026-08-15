@@ -49,8 +49,8 @@ Edit `js/config.js` — phone, Facebook, address, Maps URL.
 
 ## Deploy to GitHub Pages
 1. Push to GitHub repo
-2. Settings → Pages → Source: `main` branch, `/ (root)` → Save
-3. Use relative paths (already configured)
+2. Settings → Pages → Source: `GitHub Actions`
+3. The repository workflow `.github/workflows/deploy.yml` handles deployment with automatic retries for transient Pages API failures.
 
 ## Replace Product Images
 Put JPG/WEBP files in `assets/products/` and update `image` in `js/products.js`. Hero slides: `assets/images/hero/slide-1.png` / `slide-2.png` / `slide-3.png` (configured in `js/config.js` → `HERO_SLIDES`). Actual files on disk are `.png` — use the exact extension (GitHub Pages is case-sensitive).
